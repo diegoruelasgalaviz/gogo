@@ -5,7 +5,6 @@ import { connect } from "react-redux";
 import Box from "@material-ui/core/Box";
 import Button from "@material-ui/core/Button";
 import Alert from '@material-ui/lab/Alert';
-import Logo from "../assets/logo-white.png";
 import { login } from "../actions"
 import CustomTextField from "../components/custom/CustomTextField";
 import Grid from "@material-ui/core/Grid";
