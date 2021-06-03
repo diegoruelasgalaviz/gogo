@@ -1,4 +1,4 @@
-import { Login, User, Category, Product, Transaction, Setting } from "../constants/action";
+import { Login, User, Category, Product, Transaction, Setting, Credits } from "../constants/action";
 
 export const login = (data) => ({ type: Login.LOGIN, payload: data })
 
@@ -7,6 +7,13 @@ export const fetchSingleUser = (data) => ({ type: User.FETCH_SINGLE_USER, payloa
 export const createUser = (data) => ({ type: User.CREATE_USER, payload: data })
 export const updateUser = (data) => ({ type: User.UPDATE_USER, payload: data })
 export const deleteUser = (data) => ({ type: User.DELETE_USER, payload: data })
+
+export const fetchCredits = (data) => ({ type: Credits.FETCH_ALL_Credit, payload: data })
+export const fetchSingleCredit = (data) => ({ type: Credits.FETCH_SINGLE_Credit, payload: data })
+export const createCredit = (data) => ({ type: Credits.CREATE_Credit, payload: data })
+export const updateCredit = (data) => ({ type: Credits.UPDATE_Credit, payload: data })
+export const deleteCredit = (data) => ({ type: Credits.DELETE_Credit, payload: data })
+
 
 export const fetchCategories = (data) => ({ type: Category.FETCH_ALL_CATEGORY, payload: data })
 export const fetchSingleCategory = (data) => ({ type: Category.FETCH_SINGLE_CATEGORY, payload: data })

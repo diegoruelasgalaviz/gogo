@@ -3,6 +3,7 @@ import withStyles from "@material-ui/core/styles/withStyles";
 import {connect} from "react-redux";
 import colors from "../../constants/colors";
 import {Fade} from "@material-ui/core";
+import DescriptionIcon from '@material-ui/icons/Description';
 import Button from "@material-ui/core/Button";
 import AddIcon from '@material-ui/icons/Add';
 import TableHead from "@material-ui/core/TableHead";
@@ -190,6 +191,14 @@ class Products extends React.Component {
                                 pathname: 'product/create'
                             })}>
                             New Data
+                        </Button>
+                        <Button
+                            size="small"
+                            variant="contained"
+                            color="secondary"
+                            startIcon={<DescriptionIcon/>}
+                            >
+                           import Excel
                         </Button>
                     </Subheader>
 

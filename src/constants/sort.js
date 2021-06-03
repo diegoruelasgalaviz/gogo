@@ -9,6 +9,12 @@ export const UserSort = {
     LAST_ACTIVE: 'Last Active'
 }
 
+export const CreditSort = {
+    ...DefaultSort,
+    NAME: 'Name',
+    LAST_ACTIVE: 'Last Active'
+}
+
 export const CategorySort = {
     ...DefaultSort,
     NAME: 'Name'

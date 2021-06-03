@@ -18,6 +18,8 @@ import Report from "../../screens/report/Report";
 import FormCategory from "../../screens/category/FormCategory";
 import Account from "../../screens/Account";
 import Setting from "../../screens/Setting";
+import Credits from "../../screens/credits/Credits";
+import Inventario from "../../screens/inventario/Inventario";
 
 export const routes = [
     {
@@ -25,6 +27,7 @@ export const routes = [
         path: '/admin',
         component: Dashboard,
         icon: HomeIcon,
+        role: ROLE.Admin
     },
     {
         name: 'User',
@@ -109,6 +112,19 @@ export const routes = [
         child: true,
         path: '/admin/setting',
         component: Setting,
+    },
+    {
+        name: 'Creditos',
+        path: '/admin/credits',
+        component: Credits,
+        icon: ReceiptIcon
+    },
+    
+    {
+        name: 'Inventarios',
+        path: '/admin/inventario',
+        component: Inventario,
+        icon: ReceiptIcon
     },
 ]
 

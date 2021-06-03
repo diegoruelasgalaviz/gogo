@@ -13,6 +13,7 @@ import colors from "../../constants/colors";
 import {fetchTransactionProducts, createTransaction, fetchSetting} from "../../actions";
 import CheckoutSkeleton from "../../components/skeleton/CheckoutSkeleton";
 import CheckoutDialog from "../../components/custom/CheckoutDialog";
+import SearchBox from "./SearchBox";
 
 
 const styles = theme => ({
@@ -124,6 +125,10 @@ class Transaction extends React.Component {
             {
                 _id: 'all',
                 name: 'All'
+            },
+            {
+                _id: 'find',
+                name: 'Buscar'
             }
         ]
         categories.forEach((item) => {
@@ -154,6 +159,10 @@ class Transaction extends React.Component {
             return (
                 <Box className={classes.noProducts}>No Products</Box>
             )
+        }
+        
+        if(tabSelected == "find"){
+            return <SearchBox/>
         }
 
         return product.map((item, i) => (
